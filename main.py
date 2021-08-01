@@ -5,7 +5,7 @@ ip = socket.gethostbyname(socket.gethostname()) #You IP address
 
 for port in range(65535): #All ports are in 0-65535
     try:
-        serv = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        serv = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #create a new socket
         serv.bind((ip, port)) #bind port with your ip address
 
     except:
